@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <a href="" ui-sref="list()"><button class="btn" type="button" name="button">Wróć</button></a>
+      <h1>{{todo.title}}</h1>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="panel-body">
+            <form ng-submit="submit()">
+              <div class="form-group">
+                <label for="title">Zadanie</label>
+                <input class="form-control" type="text" name="title" ng-model="todo.title">
+              </div>
+              <div class="form-group">
+                <label for="description">Opis zadania</label>
+                <textarea class="form-control" name="description" rows="8" cols="80" ng-model="todo.description"></textarea>
+              </div>
+              <button type="submit" class="btn">Zapisz</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <a href="" ui-sref="list"><button class="btn" type="button" name="button">Wróć</button></a>
+    </div>
+  </div>
+</div>
